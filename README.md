@@ -1,7 +1,7 @@
 # Watchword Generator Starter Code
 
 
-![img](//path here)
+![img](Develop/images /PAGE.png)
 
 
 ## Description
@@ -13,16 +13,16 @@ As an employee with access to sensitive data, I want to randomly generate a pass
 
 
 ## Screenshot
-![Screenshot](path)
+![Screenshot](Develop/images /OPTIONS.png)
 This screenshot shows the password generator prior to the search criteria.
 
 
-![Screenshot2](path)
+![Screenshot2](Develop/images /Option.png)
 This screenshot provides the options the user has.
 
 
-![Screenshot3](path)
-This screenshot shows an example of the developed file.
+![Screenshot3](Develop/images /RESULTS .png)
+This screenshot shows an example of the search results. 
 
 
 ## Deployed Application
