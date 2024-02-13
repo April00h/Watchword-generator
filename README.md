@@ -1,7 +1,7 @@
 # Watchword Generator Starter Code
 
 
-![img](Develop/images /PAGE.png)
+![img](/Develop/images /PAGE.png)
 
 
 ## Description
