@@ -21,7 +21,7 @@ This screenshot shows the password generator prior to the search criteria.
 This screenshot provides the options the user has.
 
 
-![screenshot3](Develop/assets/images/RESULTS.png) 
+![screenshot3](Develop/assets/images/RESULTS.png)
 
 This screenshot shows an example of the search results. 
 
