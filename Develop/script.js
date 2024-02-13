@@ -8,12 +8,38 @@ var upperCasedCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K
 
 // Function to obtain user input for password options and password length
 function getPasswordOptions() {
+
 var length = parseInt(prompt('How many characters would you like your password to contain?'), 10);
+if (Number.isNaN(length)) {
+    alert('Password length must be provided as a number');
+    return null;
+  }
+  // Conditional statement to check password length 
+  if (length < 8) {
+    alert('Password length must be at least 8 characters');
+    return null;
+  }
+  // Conditional statement to check password length 
+  if (length > 128) {
+    alert('Password length must be less than 128 characters');
+    return null;
+  }
+  // Variable to store boolean 
+  var hasSpecialCharacters = confirm(
+    'Click OK to confirm including special characters.'
+  );
+  var hasNumericCharacters = confirm(
+    'Click OK to confirm including numeric characters.'
+  );
+  var hasLowercaseCharacters = confirm(
+    'Click OK to confirm including lowercase characters.'
+  );
+  var hasUppercaseCharacters = confirm(
+    'Click OK to confirm including uppercase characters.'
+  );
 
-
-if (Number.isNaN(length) || length < 8 || length > 128) {
-alert('Password length must be a number between 8 and 128.');
-return null;
+    if (Number.isNaN(length) || length < 8 || length > 128) {
+alert('Length must be a number between 8 and 128.');
 }
 
 
@@ -52,8 +78,6 @@ return arr[randIndex];
 // Function to generate a password with given inputs
 function generatePassword() {
 var options = getPasswordOptions();
-
-
 var currentArr = [];
 if (options.hasSpecialCharacters) currentArr = currentArr.concat(specialCharacters);
 if (options.hasNumericCharacters) currentArr = currentArr.concat(numericCharacters);
@@ -61,13 +85,15 @@ if (options.hasLowercaseCharacters) currentArr = currentArr.concat(lowerCasedCha
 if (options.hasUppercaseCharacters) currentArr = currentArr.concat(upperCasedCharacters);
 
 
-var password = "";
-for (var i = 0; i < options.length; i++) {
-password += getRandom(currentArr);
-}
-
-
-return password;
+console.log(currentArr)
+// Generate random string password from new array
+let pass = ""
+let i = 0
+while (i < options.length) {
+  pass += getRandom(currentArr);
+  i++
+} 
+return pass
 }
 
 
