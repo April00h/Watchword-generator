@@ -28,4 +28,4 @@ This screenshot shows an example of the search results.
 
 ## Deployed Application
 View below:
-[Here] (https://github.com/April00h/Watchword-generator.git)
+[Here](https://april00h.github.io/Watchword-generator/) 
